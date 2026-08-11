@@ -37,14 +37,6 @@
                     <div class="time">18:00</div>
                     <div class="event">
                         <h3>Праздничный ужин</h3>
-                        <p>Начало торжественного ужина</p>
-                    </div>
-                </div>
-
-                <div class="schedule-item">
-                    <div class="time">18:00 - Утро</div>
-                    <div class="event">
-                        <h3>Праздник продолжается</h3>
                         <p>Тосты, поздравления, музыка и танцы</p>
                     </div>
                 </div>
@@ -61,10 +53,7 @@
 
         <section class="info">
             <h2>ℹ️ Информация</h2>
-            <div class="info-box">
-                <p><strong>Юбиляр:</strong> Ильнур</p>
-                <p><strong>Супруга:</strong> Энже</p>
-                <p><strong>Дата:</strong> 8 января 2027</p>
+            <p><strong>Дата:</strong> 8 января 2027</p>
             </div>
         </section>
 
@@ -72,14 +61,14 @@
             <h2>📋 Опрос</h2>
             <p class="poll-question">Смогу ли я прийти на праздник?</p>
             <div class="poll-buttons">
-                <button class="poll-btn yes-btn" onclick="submitPoll('yes')">✅ Смогу прийти</button>
-                <button class="poll-btn no-btn" onclick="submitPoll('no')">❌ Не смогу</button>
+                <button class="poll-btn yes-btn" onclick="submitPoll('yes')">✅ Будем</button>
+                <button class="poll-btn no-btn" onclick="submitPoll('no')">❌ не сможем, но на 100лет точно будем</button>
             </div>
             <p class="poll-message" id="pollMessage"></p>
         </section>
 
         <footer class="footer">
-            <p>С любовью и теплом ждём вас на юбилее! 💝</p>
+            <p> ???? </p>
         </footer>
     </div>
 
@@ -87,10 +76,10 @@
         function submitPoll(answer) {
             const messageEl = document.getElementById('pollMessage');
             if (answer === 'yes') {
-                messageEl.textContent = '✅ Спасибо за подтверждение! Очень рады!';
+                messageEl.textContent = '✅ Ай, маладес';
                 messageEl.style.color = '#28a745';
             } else {
-                messageEl.textContent = '❌ Понимаем, может быть в следующий раз!';
+                messageEl.textContent = '❌ Записал на следующий раз :)!';
                 messageEl.style.color = '#dc3545';
             }
         }
