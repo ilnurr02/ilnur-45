@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подтверждение участия - Юбилей Ильнура</title>
+    <link rel="stylesheet" href="webapp.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="webapp-container">
+        <div class="header">
+            <h1>🎉 Юбилей Ильнура</h1>
+            <p>Подтверждение участия</p>
+        </div>
+
+        <div class="content">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="Введите ваше имя"
+                    maxlength="50"
+                />
+            </div>
+
+            <div class="form-group">
+                <label>Смогу ли я прийти?</label>
+                <div class="button-group">
+                    <button id="yes-btn" class="choice-btn yes-btn" data-answer="Буду">
+                        ✅ Буду
+                    </button>
+                    <button id="no-btn" class="choice-btn no-btn" data-answer="Не смогу">
+                        ❌ Не смогу
+                    </button>
+                </div>
+            </div>
+
+            <div id="selected-answer" class="selected-answer"></div>
+
+            <button id="submit-btn" class="submit-btn" disabled>
+                Отправить ответ
+            </button>
+
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+
+    <script src="webapp.js"></script>
+</body>
+</html>
