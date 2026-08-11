@@ -68,9 +68,32 @@
             </div>
         </section>
 
+        <section class="poll">
+            <h2>📋 Опрос</h2>
+            <p class="poll-question">Смогу ли я прийти на праздник?</p>
+            <div class="poll-buttons">
+                <button class="poll-btn yes-btn" onclick="submitPoll('yes')">✅ Смогу прийти</button>
+                <button class="poll-btn no-btn" onclick="submitPoll('no')">❌ Не смогу</button>
+            </div>
+            <p class="poll-message" id="pollMessage"></p>
+        </section>
+
         <footer class="footer">
             <p>С любовью и теплом ждём вас на юбилее! 💝</p>
         </footer>
     </div>
+
+    <script>
+        function submitPoll(answer) {
+            const messageEl = document.getElementById('pollMessage');
+            if (answer === 'yes') {
+                messageEl.textContent = '✅ Спасибо за подтверждение! Очень рады!';
+                messageEl.style.color = '#28a745';
+            } else {
+                messageEl.textContent = '❌ Понимаем, может быть в следующий раз!';
+                messageEl.style.color = '#dc3545';
+            }
+        }
+    </script>
 </body>
 </html>
