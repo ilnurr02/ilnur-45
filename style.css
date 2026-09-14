@@ -189,6 +189,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    text-align: center;
+    padding: 20px;
 }
 
 .form-container iframe {
@@ -196,6 +198,36 @@ body {
     width: 100%;
     border: none;
     border-radius: 10px;
+}
+
+/* Telegram Button */
+.telegram-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0088cc 0%, #005fa3 100%);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 136, 204, 0.3);
+    cursor: pointer;
+    border: none;
+    min-width: 280px;
+}
+
+.telegram-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0, 136, 204, 0.4);
+    background: linear-gradient(135deg, #0099dd 0%, #0066b3 100%);
+}
+
+.telegram-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(0, 136, 204, 0.3);
 }
 
 /* Footer */
@@ -240,6 +272,11 @@ body {
     .form-container iframe {
         min-height: 600px;
     }
+
+    .telegram-button {
+        min-width: 100%;
+        max-width: 400px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -279,5 +316,11 @@ body {
 
     .form-container iframe {
         min-height: 700px;
+    }
+
+    .telegram-button {
+        font-size: 1em;
+        padding: 14px 24px;
+        min-width: 100%;
     }
 }
